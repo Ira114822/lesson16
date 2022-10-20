@@ -3,7 +3,7 @@ LOWER_CASE = 'qwertyuiopasdfghjklzxcvbnm'
 UPPER_CASE = 'QWERTYUIOPASDFGHJKLZXCVBNM'
 
 
-
+password = "12345rtye"
 
 
 def check_password(password):
@@ -45,13 +45,13 @@ def check_password(password):
     is_lower = False
     for ch in password:
         if ch in LOWER_CASE:
-            is_digit = True
+            is_lower = True
             break
 
     is_upper = False
     for ch in password:
         if ch in UPPER_CASE:
-            is_digit = True
+            is_upper = True
             break
 
     if is_upper and is_lower and is_digit:
